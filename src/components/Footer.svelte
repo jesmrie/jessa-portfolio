@@ -16,11 +16,11 @@
       alt: "Instagram",
       href: "https://www.instagram.com/jesmrie"
     },
-    {
-      src: "images/dribbble.png",
-      alt: "Dribbble",
-      href: "https://dribbble.com/jesmrie"
-    },
+    // {
+    //   src: "images/dribbble.png",
+    //   alt: "Dribbble",
+    //   href: "https://dribbble.com/jesmrie"
+    // },
     {
       src: "images/linkedin.png",
       alt: "Linkedin",
@@ -58,8 +58,8 @@
   </p>
   <div class="mb-5">
     {#each socialmedia as { src, alt, href }}
-      <a {href} class="mr-4">
-        <img {src} {alt} />
+      <a {href} class="mr-3">
+        <img {src} {alt} class="mb-1"/>
       </a>
     {/each}
   </div>

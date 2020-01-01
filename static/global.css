@@ -84,7 +84,7 @@ img {
   }  
 
 .full {
-	height: 75vh;
+	height: 80vh;
 }
 
 .hr-decorator {
@@ -93,8 +93,11 @@ img {
 	margin: 0;
 }
 
-
 section {
 	padding-top: 5rem;
 	position: relative;
+}
+
+.undraw-illus {
+	max-height: 265px;
 }

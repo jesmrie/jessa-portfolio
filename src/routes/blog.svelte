@@ -13,7 +13,7 @@
   <title>Jessa Pedrola - Blog</title>
 </svelte:head>
 
-<img src="images/under-dev.svg" class="mb-5" alt="Illustration from Undraw" />
+<img src="images/under-dev.svg" class="mb-5 w-100 undraw-illus" alt="Illustration from Undraw" />
 <h2>This page is under development.</h2>
 
 <div class="row d-flex justify-content-center">

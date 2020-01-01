@@ -38,7 +38,13 @@
     color: #77c9ff;
   }
 
-  @media (max-width: 640px) {
+  @media (max-width: 550px) {
+    h1 {
+      font-size: 3em;
+    }
+  }
+
+  @media (max-width: 769px) {
     .portrait {
       width: 100% !important;
     }
@@ -46,6 +52,11 @@
     img {
       margin-bottom: 1.5em;
     }
+  }
+
+  .skills-img{
+    max-width: 135px;
+    max-height: 135px;
   }
 
   .highlight,
@@ -135,7 +146,7 @@
               <div class="card p-3">
                 <div class="row">
                   <div class="col-md-2">
-                    <img {src} class="w-100" alt={title} />
+                    <img {src} class="w-100 skills-img" alt={title} />
                   </div>
                   <div class="col-md-6">
                     <h4>{title}</h4>
