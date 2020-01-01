@@ -31,9 +31,17 @@
 	<title>{status}</title>
 </svelte:head>
 
-<h1>{status}</h1>
-
-<p>{error.message}</p>
+{#if status == 404}
+	<div class="container text-center mt-5">
+		<img src="images/404.svg" class="mb-5" alt="Not found by Katerina Limpitsouni of unDraw" />
+		<h2>Page not found</h2>
+		<p>The page you are looking for doesn’t exist.</p>
+		<a href="/">Go back to about</a>
+	</div>
+{:else}
+	<h1>{status}</h1>
+	<p>{error.message}</p>
+{/if}
 
 {#if dev && error.stack}
 	<pre>{error.stack}</pre>

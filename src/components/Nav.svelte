@@ -1,28 +1,30 @@
 <script>
-	// let active = 'home';
+  import { stores } from '@sapper/app';
+  const { page } = stores();
+  $:active = $page.path;
 </script>
 
 <style>
   .navbar-inner {
-    background: #F9FBFA !important;
+    background: #f9fbfa !important;
   }
 
   .navbar-brand {
-	font-weight: 700;
-	font-family: 'Playfair Display', serif;
-	color: #77c9ff !important;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+    color: #77c9ff !important;
   }
 
   .nav-item {
-	  margin-left: 1.5em;
+    margin-left: 2em;
   }
-
-  /* .nav-item.active {
-	  border-bottom: solid 2px #77c9ff;
-  } */
+  .nav-item.active {
+    border-bottom: solid 2px #77c9ff;
+  }
 </style>
 
-<nav class="navbar navbar-inner fixed-top navbar-expand-lg navbar-light bg-light">
+<nav
+  class="navbar navbar-inner navbar-expand-lg navbar-light bg-light">
   <div class="container">
     <a class="navbar-brand" href="/">Jessa Pedrola</a>
     <button
@@ -37,19 +39,20 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav ml-auto">
-        <!-- <li class="nav-item" class:active="{active === 'home'}"
-		on:click="{() => active = 'home'}"> -->
-        <li class="nav-item">
-          <a class="nav-link" href="#home">Home</a>
+        <li
+          class="nav-item"
+          class:active={active === '/'}>
+          <a class="nav-link" href="/">About</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
+        <li
+          class="nav-item"
+          class:active={active === '/work'}>
+          <a class="nav-link" href="/work">Work</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
+        <li
+          class="nav-item"
+          class:active={active === '/blog'}>
+          <a class="nav-link" href="/blog">Blog</a>
         </li>
       </ul>
     </div>
