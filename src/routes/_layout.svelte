@@ -33,4 +33,5 @@
 </main>
 
 <a href="/404" style="display:none">404</a>
+<a href="netlify.toml" style="display:none">redirect</a>
 <Footer />
