@@ -16,8 +16,6 @@
         "I write HTML, CSS and Javascript. Frameworks / other techs I have experience with include React, Python, Firebase, Google App Engine, Ionic, and PHP."
     }
   ];
-
-  let y;
 </script>
 
 <style>
@@ -78,7 +76,9 @@
 
 </style>
 
-<svelte:window bind:scrollY={y} />
+<svelte:head>
+  <title>Jessa Pedrola</title>
+</svelte:head>
 <section id="home" class="full">
   <div class="greeting mb-5">
     <img src={waveSrc} alt="wave" />
