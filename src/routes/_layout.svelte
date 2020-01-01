@@ -32,4 +32,5 @@
   <slot />
 </main>
 
+<a href="/404" style="display:none">404</a>
 <Footer />
