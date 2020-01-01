@@ -1,5 +1,5 @@
 <script>
-	let active = 'home';
+	// let active = 'home';
 </script>
 
 <style>
@@ -17,9 +17,9 @@
 	  margin-left: 1.5em;
   }
 
-  .nav-item.active {
+  /* .nav-item.active {
 	  border-bottom: solid 2px #77c9ff;
-  }
+  } */
 </style>
 
 <nav class="navbar navbar-inner fixed-top navbar-expand-lg navbar-light bg-light">
@@ -37,20 +37,18 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item" class:active="{active === 'home'}"
-		on:click="{() => active = 'home'}">
+        <!-- <li class="nav-item" class:active="{active === 'home'}"
+		on:click="{() => active = 'home'}"> -->
+        <li class="nav-item">
           <a class="nav-link" href="#home">Home</a>
         </li>
-        <li class="nav-item" class:active="{active === 'about'}"
-		on:click="{() => active = 'about'}">
+        <li class="nav-item">
           <a class="nav-link" href="#about">About</a>
         </li>
-        <li class="nav-item" class:active="{active === 'skills'}"
-		on:click="{() => active = 'skills'}">
+        <li class="nav-item">
           <a class="nav-link" href="#skills">Skills</a>
         </li>
-        <li class="nav-item" class:active="{active === 'contact'}"
-		on:click="{() => active = 'contact'}">
+        <li class="nav-item">
           <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>

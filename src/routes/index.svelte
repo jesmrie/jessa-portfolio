@@ -54,7 +54,10 @@
       href: "https://www.linkedin.com/in/jessapedrola/"
     }
   ];
+
+  let y;
 </script>
+<svelte:window bind:scrollY={y}/>
 
 <style>
   h1 {
@@ -84,15 +87,14 @@
     display: none;
   }
 
-
   @media (max-width: 640px) {
-	.portrait {
-		width: 100% !important;
-	}
+    .portrait {
+      width: 100% !important;
+    }
 
-	img {
-		margin-bottom: 1.5em;
-	}
+    img {
+      margin-bottom: 1.5em;
+    }
   }
 
   @media (min-width: 640px) {
@@ -137,7 +139,7 @@
     .vector-8 {
       bottom: -200px;
       right: 50px;
-	}
+    }
   }
 
   .highlight,
@@ -178,9 +180,9 @@
 <section id="home" class="full">
 
   <!-- vectors in background -->
-  {#each vectorSrc as src, i}
-    <img {src} class="vector vector-{i + 1}" alt="vector" />
-  {/each}
+	{#each vectorSrc as src, i}
+		<img {src} class="vector vector-{i + 1}" alt="vector" />
+	{/each} 
   <div class="greeting">
     <h1 class="mt-5 mb-3">Hi, I'm Jessa.</h1>
     <p>Full-stack developer, Designer, and Photo Hobbyist.</p>
@@ -269,5 +271,5 @@
       </a>
     {/each}
   </div>
-  <span>© 2020 Jessa Marie Pedrola. All Rights Reserved.</span>
+  <p>© 2020 Jessa Marie Pedrola. All Rights Reserved.</p>
 </section>
