@@ -79,7 +79,7 @@
 <svelte:head>
   <title>Jessa Pedrola</title>
 </svelte:head>
-<section id="home" class="full">
+<section id="home" class="vh-80">
   <div class="greeting mb-5">
     <img src={waveSrc} alt="wave" />
     <h1 class="mt-2 mb-3">Hi, I'm Jessa.</h1>

@@ -12,7 +12,7 @@
 <svelte:head>
   <title>Jessa Pedrola - Work</title>
 </svelte:head>
-<div class="container">
+<div class="container vh-100">
   <img src="images/under-dev.svg" class="mb-5 undraw-illus w-100" alt="Illustration from Undraw" />
   <h2>This page is under development.</h2>
   <div class="row d-flex justify-content-center">
