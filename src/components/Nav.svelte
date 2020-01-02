@@ -21,7 +21,7 @@
 </style>
 
 <nav
-  class="navbar navbar-transparent navbar-expand-lg navbar-light bg-light">
+  class="navbar navbar-transparent navbar-expand-lg navbar-light">
   <div class="container">
     <a class="navbar-brand" href="/">Jessa Pedrola</a>
     <button
