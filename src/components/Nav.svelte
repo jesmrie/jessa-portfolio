@@ -5,9 +5,6 @@
 </script>
 
 <style>
-  .navbar-inner {
-    background: #f9fbfa !important;
-  }
 
   .navbar-brand {
     font-weight: 700;
@@ -24,7 +21,7 @@
 </style>
 
 <nav
-  class="navbar navbar-inner navbar-expand-lg navbar-light bg-light">
+  class="navbar navbar-transparent navbar-expand-lg navbar-light bg-light">
   <div class="container">
     <a class="navbar-brand" href="/">Jessa Pedrola</a>
     <button
