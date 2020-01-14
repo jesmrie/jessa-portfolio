@@ -12,13 +12,16 @@
 <svelte:head>
   <title>Jessa Pedrola - Work</title>
 </svelte:head>
-<div class="container vh-100">
-  <img src="images/under-dev.svg" class="mb-5 undraw-illus w-100" alt="Illustration from Undraw" />
+<div class="container vh-80">
+  <img
+    src="images/under-dev.svg"
+    class="mt-5 mb-5 undraw-illus w-100"
+    alt="Illustration from Undraw" />
   <h2>This page is under development.</h2>
   <div class="row d-flex justify-content-center">
     <div class="col-md-6">
       <p>
-        For now, you may check out our company’s work at the
+        Slowly compiling my work. For now, check out our company’s work at the
         <span class="highlight">
           <a href="https://www.symph.co/work">Symph website</a>
         </span>

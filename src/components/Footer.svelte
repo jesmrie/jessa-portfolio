@@ -1,33 +1,31 @@
 <script>
-
   let socialmedia = [
     {
       src: "images/facebook.png",
       alt: "Facebook",
       href: "https://www.facebook.com/jesmrie"
     },
-    {
-      src: "images/twitter.png",
-      alt: "Twitter",
-      href: "https://www.twitter.com/jesmrie"
-    },
+    // {
+    //   src: "images/twitter.png",
+    //   alt: "Twitter",
+    //   href: "https://www.twitter.com/jesmrie"
+    // },
     {
       src: "images/insta.png",
       alt: "Instagram",
       href: "https://www.instagram.com/jesmrie"
     },
-    // {
-    //   src: "images/dribbble.png",
-    //   alt: "Dribbble",
-    //   href: "https://dribbble.com/jesmrie"
-    // },
+    {
+      src: "images/dribbble.png",
+      alt: "Dribbble",
+      href: "https://dribbble.com/jesmrie"
+    },
     {
       src: "images/linkedin.png",
       alt: "Linkedin",
       href: "https://www.linkedin.com/in/jessapedrola/"
     }
   ];
-
 </script>
 
 <style>
@@ -59,7 +57,7 @@
   <div class="mb-5">
     {#each socialmedia as { src, alt, href }}
       <a {href} class="mr-3">
-        <img {src} {alt} class="mb-1"/>
+        <img {src} {alt} class="mb-1" />
       </a>
     {/each}
   </div>
