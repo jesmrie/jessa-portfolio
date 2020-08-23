@@ -1,16 +1,12 @@
-<script>
-  import Nav from "../components/Nav.svelte";
-  import Footer from "../components/Footer.svelte";
-</script>
-
 <style>
   main {
-    text-align: center;
+    padding: 100px;
     margin: 0 auto;
   }
 
-  @media (min-width: 640px) {
+  @media (max-width: 640px) {
     main {
+      padding: 20px;
       max-width: none;
     }
   }
@@ -18,19 +14,12 @@
 
 <svelte:head>
   <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Playfair+Display:400,700&display=swap"
+    href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,600,700|Lato:400,700&display=swap"
     rel="stylesheet" />
   <title>Jessa Pedrola</title>
 </svelte:head>
-
-<Nav />
-
 <main>
   <slot />
 </main>
 
 <a href="/404" style="display:none">404</a>
-<Footer />

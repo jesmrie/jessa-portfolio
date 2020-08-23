@@ -36,7 +36,7 @@
 		<img src="images/404.svg" class="mb-5 w-100 undraw-illus" alt="Not found by Katerina Limpitsouni of unDraw" />
 		<h2>Page not found</h2>
 		<p>The page you are looking for doesn’t exist.</p>
-		<a href="/">Go back to about</a>
+		<a href="/">Go back to Home</a>
 	</div>
 {:else}
 	<h1>{status}</h1>
