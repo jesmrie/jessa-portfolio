@@ -46,10 +46,17 @@
     .btn-primary {
       font-size: 1em;
     }
+
+    .social-links {
+      display: none;
+    }
   }
 
   .social-links {
     text-align: right;
+    position: absolute;
+    right: 8em;
+    bottom: 5em;
   }
 
   .social-links div {
