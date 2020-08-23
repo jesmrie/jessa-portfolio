@@ -34,6 +34,20 @@
     margin-top: 1em;
   }
 
+  @media (max-width: 640px) {
+    h1 {
+      font-size: 2.4em;
+    }
+
+    p {
+      font-size: 1em;
+    }
+
+    .btn-primary {
+      font-size: 1em;
+    }
+  }
+
   .social-links {
     text-align: right;
   }
