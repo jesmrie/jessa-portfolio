@@ -1,7 +1,4 @@
 <script>
-  let waveSrc = "images/wave.svg";
-  let portraitSrc = "images/portrait.png";
-
   let socialmedia = [
     {
       src: "images/linkedin.svg",
@@ -27,36 +24,19 @@
 </script>
 
 <style>
-  h1 {
-    font-size: 4em;
-    text-transform: uppercase;
-    margin-bottom: 0.3em;
-    margin-top: 1em;
-  }
-
-  @media (max-width: 640px) {
-    h1 {
-      font-size: 2.4em;
+    p {
+      font-size: 2.5rem;
     }
+  @media (max-width: 640px) {
 
     p {
-      font-size: 1em;
+      font-size: 1.3rem;
     }
 
-    .btn-primary {
-      font-size: 1em;
-    }
-
-    .social-links {
-      display: none;
-    }
   }
 
   .social-links {
-    text-align: right;
-    position: absolute;
-    right: 8em;
-    bottom: 5em;
+    margin-top: 50px;
   }
 
   .social-links div {
@@ -76,17 +56,12 @@
 <svelte:head>
   <title>Jessa Pedrola</title>
 </svelte:head>
-<div>
-  <h1>Jessa Pedrola</h1>
+<div class="row text-center">
   <p>
-    Full-stack Dev. Designer. And some other stuff. <br/>
-    Currently working at <a href="https://www.symph.co/">Symph</a>.
+    Lifelong learner.
   </p>
 
-  <p>This page is indefinitely under construction. 🚧</p>
-  <div class="mt-4">
-    <a href="mailto:pedrolajessamarie@gmail.com" class="btn-primary mt-5">Say Hi</a>
-  </div>
+  <p>This page is indefinitely under construction.<br />🚧</p>
 
   <div class="social-links">
     {#each socialmedia as { src, alt, href }}
