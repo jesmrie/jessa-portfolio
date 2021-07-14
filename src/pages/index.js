@@ -150,7 +150,7 @@ const IndexPage = () => {
                   alt="web development"
                   className={styles.sampleWork}
                   quality={100}
-                  src="../images/web-development.png"
+                  src="../images/webdev.png"
                 />
               </div>
               <div className={styles.column}>
@@ -190,7 +190,7 @@ const IndexPage = () => {
                   alt="about jessa"
                   className={styles.sampleWork}
                   quality={100}
-                  src="../images/web-design.png"
+                  src="../images/webdesign.png"
                 />
               </div>
             </div>
