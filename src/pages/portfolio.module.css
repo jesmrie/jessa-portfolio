@@ -1,0 +1,28 @@
+.textLink {
+  text-decoration: none;
+  color: var(--secondary-color);
+  letter-spacing: 1px;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+}
+
+.textLink:hover {
+  opacity: 70%;
+}
+
+.pageHeading {
+  font-size: 72px;
+  font-family: var(--primary-font);
+}
+
+.portfolioDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.portfolioDiv div {
+  flex: 30%;
+  flex-grow: 1;
+  padding: 10px
+}

@@ -1,0 +1,284 @@
+p {
+  font-size: 14px;
+  line-height: calc(14px * 2);
+}
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
+section {
+  margin-bottom: 10rem;
+  max-width: 960;
+}
+
+.aboveText {
+  top: 140px;
+  right: calc(50% - 100px);
+}
+
+.belowText {
+  top: 210px;
+  left: calc(50% - 130px);
+}
+
+.aboutImgDiv {
+  padding: 20px;
+}
+
+.fullWidth {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw
+}
+
+.heroDiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.heroText {
+  font-size: 64px;
+  font-family: var(--primary-font);
+  position: absolute;
+  z-index: 1;
+}
+
+.hide {
+  display: none;
+}
+
+.outline {
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--secondary-color);
+}
+
+.row {
+  display: flex;
+  margin-top: 5rem;
+  position: relative;
+  flex-direction: column;
+}
+
+.column {
+  flex: 50%;
+}
+
+.primaryButton {
+  height: 50px;
+  font-family: var(--secondary-font);
+  outline: none;
+  border: 1px solid var(--secondary-color);
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border-radius: 25px;
+  padding: 0px 30px;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+}
+
+.primaryButton:hover {
+  color: var(--secondary-color);
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.secondaryButton {
+  height: 50px;
+  font-family: var(--secondary-font);
+  outline: none;
+  border: 1px solid var(--primary-color);
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  border-radius: 25px;
+  padding: 0px 30px;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+}
+
+.secondaryButton:hover {
+  color: var(--primary-color);
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.scrollDown {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  font-size: 12px;
+}
+
+.subText {
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+.experienceText {
+  text-align: right;
+  font-size: 14px;
+  line-height: calc(14px * 1.768);
+  width: 30%;
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+}
+
+.experienceTable {
+  font-size: 14px;
+  line-height: calc(14px * 1.768);
+  border-spacing: 0 2.5em;
+  margin-top: 2rem;
+}
+
+.growthSeeker {
+  float: right;
+  width: 80%;
+  margin-top: -10px;
+}
+
+.dateTd {
+  width: 300px;
+  vertical-align: top;
+}
+
+.positionTd {
+  width: 350px;
+  vertical-align: top;
+}
+
+.emailLink {
+  font-family: var(--primary-font);
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-size: 36px;
+}
+
+.emailLink:hover {
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--secondary-color);
+}
+
+.textLink {
+  text-decoration: none;
+  color: var(--secondary-color);
+  letter-spacing: 1px;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+}
+
+.textLink:hover {
+  opacity: 70%;
+}
+
+.sectionHeading {
+  font-family: var(--primary-font);
+  font-size: 48px;
+}
+
+.textRight {
+  text-align: right;
+}
+
+.margin10 {
+  margin: 10px;
+}
+
+.margin50 {
+  margin: 50px;
+}
+
+.marginTop20 {
+  margin-top: 20px;
+}
+
+.marginLeft100 {
+  margin-left: 100px;
+}
+
+.marginRight100 {
+  margin-right: 100px;
+}
+
+.padding50 {
+  padding: 50px;
+}
+
+.sampleWork {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+}
+
+.sampleWork:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.socialMedia a {
+  padding: 10px;
+}
+
+.socialMedia a:hover {
+  opacity: 70%;
+}
+
+.servicesLeft {
+  width: 80%;
+}
+
+.servicesRight {
+  width: 80%;
+  float: right;
+}
+
+/* Responsiveness */
+
+
+  /* Small devices (tablets, 768px and up) */
+  @media (min-width: 768px) { 
+    .heroText {
+      font-size: 94px;
+    }
+
+    .sectionHeading {
+      font-size: 54px;
+    }
+  
+    .row{
+      flex-direction: row;
+    }
+   }
+
+  /* Medium devices (desktops, 992px and up) */
+  @media (min-width: 992px) { 
+    .heroText {
+      font-size: 144px;
+    }
+
+    .aboveText {
+      top: 90px;
+    }
+   }
+  
+  /* Large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) { 
+
+    .growthSeeker {
+      margin-right: -100px;
+    }
+   }

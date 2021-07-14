@@ -1,0 +1,149 @@
+:root {
+  --primary-color: #F6BC42;
+  --secondary-color: #213042;
+  --white: #FFFFFF;
+  --primary-font: 'Yeseva One', serif;
+  --secondary-font: 'Montserrat', sans-serif;
+}
+
+[data-theme="dark"] {
+  --primary-color: #213042;
+  --secondary-color: #F6BC42;
+}
+
+html, body {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-family: var(--secondary-font);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.page {
+  height: 100vh;
+}
+
+.page::after {
+  z-index: -99;
+  content: "";
+  animation: grain 8s steps(10) infinite;
+  background-image: url("../images/bg.jpg");
+  height: 300%;
+  left: -50%;
+  position: fixed;
+  top: -110%;
+  width: 300%;
+}
+
+@keyframes grain {
+  0%, 100% { transform:translate(0, 0) }
+  10% { transform:translate(-5%, -10%) }
+  20% { transform:translate(-15%, 5%) }
+  30% { transform:translate(7%, -25%) }
+  40% { transform:translate(-5%, 25%) }
+  50% { transform:translate(-15%, 10%) }
+  60% { transform:translate(15%, 0%) }
+  70% { transform:translate(0%, 15%) }
+  80% { transform:translate(3%, 35%) }
+  90% { transform:translate(-10%, 10%) }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--secondary-font);
+}
+
+a, button {
+  cursor: pointer;
+}
+
+/* scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--primary-color); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.section{
+  width:100%;
+  margin-top: 60px;
+  position:relative;
+  padding:0
+}
+
+.hscroll-line {
+	bottom:20px;
+	right: 48%;
+	height: 0.1px;
+	position: absolute;
+	overflow: hidden;
+  width:30px;
+  transform: rotate(90deg);
+  tranform-origin:50% 50%;
+ 
+}
+
+.hscroll-line::before,
+.hscroll-line::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	content: ""
+}
+
+.hscroll-line::after {
+	background: var(--secondary-color);
+	animation: move 3s infinite
+}
+
+@keyframes move {
+	0% {
+		transform: translate3d(-200%, 0, 0)
+	}
+	30% {
+		transform: translate3d(100%, 0, 0)
+	}
+	60% {
+		transform: translate3d(100%, 0, 0)
+	}
+	100% {
+		transform: translate3d(100%, 0, 0)
+	}
+}
+
+.textCenter {
+  text-align: center;
+  align-items: center;
+}
+
+#contact {
+  margin-bottom: -50px;
+}
+
+.footer,
+.push {
+  height: 50px;
+}
