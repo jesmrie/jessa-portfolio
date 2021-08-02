@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Jessa Pedrola`,
-    description: `Journey of a lifelong learner.`,
+    description: `Jessa Marie Pedrola is a designer and web developer based in Cebu, Philippines. She actively seeks for opportunities and experiences that can help her grow.`,
     author: `jessapedrola`,
   },
   plugins: [
@@ -10,9 +10,9 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: '3l3wdx7va3xv',
-        accessToken: 'owuoX--HBJ3VKv4aPerKh7h2yEw9ScjNHaNOPoICG1A'
-      }
+        spaceId: "3l3wdx7va3xv",
+        accessToken: "owuoX--HBJ3VKv4aPerKh7h2yEw9ScjNHaNOPoICG1A",
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -39,4 +39,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};
