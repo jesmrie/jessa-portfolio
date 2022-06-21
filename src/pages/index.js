@@ -80,10 +80,9 @@ const IndexPage = () => {
                   Hi! I’m <strong>Jessa</strong>.
                 </p>
                 <p>
-                  I previously worked as a full-stack developer but took my leap
-                  of faith to pursue being a creative and at the same time,
-                  learn more about my budding passion for finance, trading
-                  cryptocurrencies &amp; the blockchain.
+                  I previously worked as a full-stack developer for a company but took my leap
+                  of faith to pursue being a creative freelancer and at the same time,
+                  find my ikigai.
                 </p>
                 <p>
                   On my leisure time, I enjoy reading books, taking photos, go
@@ -293,17 +292,17 @@ const IndexPage = () => {
             </div>
             <table className={styles.experienceTable}>
               <tr>
-                <td className={styles.dateTd}>07.2021 - Present</td>
+                <td className={styles.dateTd}>06.2022 - Present</td>
                 <td className={styles.positionTd}>
                   <strong>Freelance Creative</strong>
                 </td>
                 <td className={styles.descriptionTd}>
-                  Help business owners and content creators achieve their
+                  Help business owners achieve their
                   business or personal goals through creative work.
                 </td>
               </tr>
               <tr>
-                <td className={styles.dateTd}>06.2021 - Present</td>
+                <td className={styles.dateTd}>06.2021 - 12.2021</td>
                 <td className={styles.positionTd}>
                   <strong>Creative Designer</strong>
                   <br />
@@ -323,7 +322,7 @@ const IndexPage = () => {
                 </td>
               </tr>
               <tr>
-                <td className={styles.dateTd}>02.2019 - Present</td>
+                <td className={styles.dateTd}>02.2019 - 11.2021</td>
                 <td className={styles.positionTd}>
                   <strong>Co-organizer</strong>
                   <br />
